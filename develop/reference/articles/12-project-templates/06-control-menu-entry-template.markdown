@@ -15,6 +15,9 @@ or
         -Dpackage=[packageName] \
         -DclassName=[className]
 
+You can also insert the `-b maven` parameter in the Blade command to generate a
+Maven project using Blade CLI.
+
 The template for this kind of project is `control-menu-entry`. Suppose you want to
 create a control menu entry project called `my-control-menu-entry-project` with
 a package name of `com.liferay.docs.entry.control.menu` and a class name of
@@ -58,7 +61,7 @@ like this:
 The generated module is functional and is deployable to a @product@ instance. To
 build upon the generated app, modify the project by adding logic and additional
 files to the folders outlined above. You can visit the
-[blade.controlmenuentry](/develop/reference/-/knowledge_base/7-0/control-menu-entry)
+[control-menu-entry](/develop/reference/-/knowledge_base/7-0/control-menu-entry)
 sample project for a more expanded sample of a Control Menu entry. Likewise, see
 the
 [Customizing the Control Menu](/develop/tutorials/-/knowledge_base/7-0/customizing-the-control-menu)

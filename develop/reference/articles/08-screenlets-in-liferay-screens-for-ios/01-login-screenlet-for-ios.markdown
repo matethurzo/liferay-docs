@@ -2,15 +2,20 @@
 
 ## Requirements [](id=requirements)
 
-- Xcode 7.3
-- iOS 9 SDK
+- Xcode 9.0
+- iOS 11 SDK
 - Liferay Portal 6.2 (CE or EE), Liferay 7.0 CE, Liferay DXP 
 - OAuth Provider app (OAuth authentication is optional. Note that OAuth only 
   works with Liferay EE and DXP instances). 
 
 ## Compatibility [](id=compatibility)
 
-- iOS 7 and above
+- iOS 9 and above
+
+## Xamarin Requirements [](id=xamarin-requirements)
+
+- Visual Studio 7.2
+- Mono .NET framework 5.4.1.6
 
 ## Features [](id=features)
 
@@ -30,6 +35,14 @@ authentication methods are supported:
   in the portal's document library without the guest view permission in the 
   portal. The other authentication types require this permission to access such 
   files. 
+
++$$$
+
+**Note:** Cookie authentication with Login Screenlet is broken in fix packs 14 
+through 18 of Liferay Digital Enterprise 7.0. This issue is fixed in newer fix 
+packs for Liferay Digital Enterprise 7.0. 
+
+$$$
 
 For instructions on configuring the Screenlet to use these authentication types, 
 see the below 

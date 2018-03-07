@@ -14,6 +14,11 @@
 
 - Android SDK 4.0 (API Level 15) and above
 
+## Xamarin Requirements [](id=xamarin-requirements)
+
+- Visual Studio 7.2
+- Mono .NET framework 5.4.1.6
+
 ## Features [](id=features)
 
 The Asset List Screenlet can be used to show [asset](/tutorials/-/knowledge_base/7-0/asset-framework) 
@@ -98,6 +103,10 @@ connection. For more information on how offline mode works, see the
 
 - `classNameId`
 
+If you don't set `classNameId`, you must set this attribute instead: 
+
+- `portletItemName`
+
 ## Attributes [](id=attributes)
 
 | Attribute | Data type | Explanation |
@@ -130,12 +139,16 @@ This interface lets you implement the following methods:
   retrieve a page of items fails. This method's arguments include the 
   `Exception` generated when the server call fails. 
 
-- `onListPageReceived(int startRow, int endRow, List<Record> records, int rowCount)`: 
+- `onListPageReceived(int startRow, int endRow, List<Model> entries, int rowCount)`: 
   Called when the server call to retrieve a page of items succeeds. Note that 
   this method may be called more than once; once for each page received. Because 
   `startRow` and `endRow` change for each page, a `startRow` of `0` corresponds 
   to the first item on the first page. 
 
-- `onListItemSelected(Record records, View view)`: Called when an item is 
+- `onListItemSelected(Model entries, View view)`: Called when an item is 
   selected in the list. This method's arguments include the selected list item 
-  (`Record`). 
+  (`Model`). 
+
+- `error(Exception e, String userAction)`: Called when an error occurs in the 
+  process. The `userAction` argument distinguishes the specific action in which 
+  the error occurred. 

@@ -14,6 +14,11 @@
 
 - Android SDK 4.0 (API Level 15) and above
 
+## Xamarin Requirements [](id=xamarin-requirements)
+
+- Visual Studio 7.2
+- Mono .NET framework 5.4.1.6
+
 ## Features [](id=features)
 
 Image Gallery Screenlet shows a list of images from a Documents and Media folder in a 
@@ -79,7 +84,7 @@ instance:
 |-----------|-----------|-------------|
 | `repositoryId` | `number` | The ID of the Liferay instance's Documents and Media repository that contains the image gallery. If you're using a site's default Documents and Media repository, then the `repositoryId` matches the site ID (`groupId`). |
 | `folderId` | `number` | The ID of the Documents and Media repository folder that contains the image gallery. When accessing the folder in your browser, the `folderId` is at the end of the URL. |
-| `cachePolicy` | `string` | The offline mode setting. See the [Offline section](/develop/reference/-/knowledge_base/7-0/gallery-screenlet-for-android#offline) for details. |
+| `cachePolicy` | `string` | The offline mode setting. See the [Offline section](/develop/reference/-/knowledge_base/7-0/image-gallery-screenlet-for-android#offline) for details. |
 | `firstPageSize` | `number` | The number of items to display on the first page. The default value is `50`. |
 | `pageSize` | `number` | The number of items to display on second and subsequent pages. The default value is `25`. |
 | `mimeTypes` | `string` | The comma-separated list of MIME types for the Screenlet to support. |
@@ -95,8 +100,9 @@ instance:
 
 ## Listener [](id=listener)
 
-Image Gallery Screenlet delegates some events to an object or class that implements 
-[its `ImageGalleryListener` interface](https://github.com/liferay/liferay-screens/blob/master/android/library/src/main/java/com/liferay/mobile/screens/imagegallery/ImageGalleryListener.java). 
+Image Gallery Screenlet delegates some events to an object or class that 
+implements its 
+[`ImageGalleryListener` interface](https://github.com/liferay/liferay-screens/blob/master/android/library/src/main/java/com/liferay/mobile/screens/imagegallery/ImageGalleryListener.java). 
 This interface extends 
 [the `BaseListListener` interface](https://github.com/liferay/liferay-screens/blob/master/android/library/src/main/java/com/liferay/mobile/screens/base/list/BaseListListener.java). 
 Therefore, Image Gallery Screenlet's listener methods are as follows: 
@@ -149,3 +155,7 @@ Therefore, Image Gallery Screenlet's listener methods are as follows:
   upload View. To inflate the default View, return `0` in this method. 
   Alternatively, display this View with a custom layout by returning its layout 
   ID. Such a layout must have `DefaultUploadDetailView` as its root class. 
+
+- `error(Exception e, String userAction)`: Called when an error occurs in the 
+  process. The `userAction` argument distinguishes the specific action in which 
+  the error occurred. 

@@ -14,6 +14,11 @@
 
 - Android SDK 4.0 (API Level 15) and above
 
+## Xamarin Requirements [](id=xamarin-requirements)
+
+- Visual Studio 7.2
+- Mono .NET framework 5.4.1.6
+
 ## Features [](id=features)
 
 Comment Add Screenlet can add a comment to an asset in a Liferay instance. 
@@ -66,3 +71,7 @@ Comment Add Screenlet delegates some events to a class that implements
 
 - `onAddCommentSuccess(CommentEntry commentEntry)`: Called when the Screenlet 
   successfully adds a comment to the asset. 
+
+- `error(Exception e, String userAction)`: Called when an error occurs in the 
+  process. The `userAction` argument distinguishes the specific action in which 
+  the error occurred. 

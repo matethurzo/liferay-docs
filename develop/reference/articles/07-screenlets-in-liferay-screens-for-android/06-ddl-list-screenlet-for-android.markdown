@@ -16,6 +16,11 @@
 
 - Android SDK 4.0 (API Level 15) and above
 
+## Xamarin Requirements [](id=xamarin-requirements)
+
+- Visual Studio 7.2
+- Mono .NET framework 5.4.1.6
+
 ## Features [](id=features)
 
 The DDL List Screenlet has the following features:
@@ -111,3 +116,7 @@ This interface lets you implement the following methods:
 - `onListItemSelected(Record records, View view)`: Called when an item is 
   selected in the list. This method's arguments include the selected list item 
   (`Record`). 
+
+- `error(Exception e, String userAction)`: Called when an error occurs in the 
+  process. The `userAction` argument distinguishes the specific action in which 
+  the error occurred. 
