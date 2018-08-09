@@ -15,7 +15,7 @@ Theme upgrades involve these steps:
 -  Applying Lexicon design patterns
 
 As an example, this tutorial applies the steps to a Liferay Portal 6.2 theme called the
-Lunar Resort theme--developed in the Liferay Portal 6.2 Learning Path [Developing a Liferay Theme](/develop/learning-paths/themes/-/knowledge_base/6-2/developing-a-liferay-theme).
+Lunar Resort theme--developed in the Liferay Portal 6.2 Learning Path [Developing a Liferay Theme](/develop/tutorials/-/knowledge_base/6-2/developing-a-liferay-theme).
 It's similar to many Liferay Portal 6.2 themes as it extends the [`_styled` theme](https://github.com/liferay/liferay-portal/tree/6.2.x/portal-web/docroot/html/themes/_styled),
 adding configurable settings and incorporating a responsive design that
 leverages Font Awesome icons and Bootstrap. The theme [ZIP file](/documents/10184/656312/lunar-resort-theme-migration-6.2.zip)
@@ -257,7 +257,7 @@ number range.
 
 Since Bootstrap 3 adopts the `box-sizing: border-box` property for all elements
 and pseudo-elements (e.g., `:before` and `:after`), padding no longer affects
-dimensions. [Bootstrap's documentation](http://getbootstrap.com/css/#less-mixins-box-sizing)
+dimensions. [Bootstrap's documentation](https://getbootstrap.com/docs/3.3/css/#less-mixins-box-sizing)
 describes the box sizing changes. Consider the padding updates the `upgrade`
 task reports for CSS rules. 
 
@@ -462,6 +462,8 @@ updated to use the new syntax.
     `${theme.wrapPortlet("portlet.ftl", content_include)}` | `<@liferay_theme["wrap-portlet"] page="portlet.ftl"> <@liferay_util["include"] page=content_include /> </@>` |
     `${theme.include(body_bottom_include)}`                | `<@liferay_util["include"] page=body_bottom_include />`                                                      |
     `${theme.include(bottom_include)}`                     | `<@liferay_util["include"] page=bottom_include />`                                                           |
+    `${theme.getSetting("my-theme-setting")}`              | `${theme_settings["my-theme-setting"]}`                                                                      |
+    `${theme.runtime("56", "articleId=" + my_article_id)}` | `<@liferay_portlet["runtime"] portletName=`<br/>`"com_liferay_journal_content_web_portlet_JournalContentPortlet"` <br/>`queryString="articleId=" + my_article_id />`                                              |
 
 2.  Replace the following link type.
 
@@ -634,7 +636,7 @@ file:
 1.  Remove the `required-deployment-contexts` property.
 
     The plugin no longer needs this property as the resources importer is now an
-    [OSGi module](https://github.com/liferay/liferay-portal/tree/master/modules/apps/web-experience/export-import/export-import-resources-importer)
+    [OSGi module](https://github.com/liferay/liferay-portal/tree/7.0.x/modules/apps/web-experience/export-import/export-import-resources-importer)
     built-in and deployed with @product-ver@.
 
 2.  Since the group model class's fully-qualified class name has changed, replace the
@@ -776,7 +778,7 @@ rendering requires a template. Follow these steps to update your web content:
 
     `device-size` can be `xs`, `sm`, `md`, or `lg`. `md` works for most cases.
     Bootstrap's site at
-    [http://getbootstrap.com/css/#grid](http://getbootstrap.com/css/#grid)
+    [https://getbootstrap.com/docs/3.3/css/#grid](https://getbootstrap.com/docs/3.3/css/#grid)
     explains the Bootstrap 3 grid system
 
     Continuing with the `2 column description.xml` article example, here is its

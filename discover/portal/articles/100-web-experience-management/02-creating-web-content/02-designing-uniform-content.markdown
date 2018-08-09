@@ -512,7 +512,7 @@ scripts, or macros. The template that you embed should be a generic template
 with no structure assigned to it. To create a template with no structure,
 leave the structure field empty when you create the template. To reference a template from within another template, you will need the Template Key.
 
-![Figure x: You can find the Template Key when view the Edit page for a template..](../../../images/find-template-key.png)
+![Figure 6: You can find the Template Key when view the Edit page for a template..](../../../images/find-template-key.png)
 
 Below are examples of embedding template in FreeMarker and Velocity:
 
@@ -550,7 +550,7 @@ placed, and click the variable name. If the variable name doesn't give you
 sufficient information on the variable's functionality, you can hover your
 pointer over it for a more detailed description.
 
-![Figure 6: You can hover your pointer over a variable for a more detailed description.](../../../images/web-content-templates-create.png)
+![Figure 7: You can hover your pointer over a variable for a more detailed description.](../../../images/web-content-templates-create.png)
 
 The interactive template editor is available for the FreeMarker, Velocity, and
 XSL languages. Depending on which language you select, the variable content
@@ -596,11 +596,11 @@ role with the ability to update the template and create a second role that can
 both update and delete. @product@ makes it possible to assign permissions based on
 the roles and responsibilities within your organization.
 
-Whether your site is small and static or large and dynamic, Liferay’s WCM
+Whether your site is small and static or large and dynamic, Liferay's WCM
 enables you to plan and manage it. With tools such as the WYSIWYG editor,
 structures and templates, you can quickly add and edit content. With the Web
 Content Display, you can rapidly select and configure what content to display.
-You'll find that managing your site becomes far easier when using @product@’s Web
+You'll find that managing your site becomes far easier when using @product@'s Web
 Content Management system.
 
 <div class="video-tag" data-name="Creating Content with Structures and Templates">

@@ -12,7 +12,7 @@ the greatest benefit with the least amount of effort.
 
 **Note:** To quickly see a working application configuration, deploy the
 `configuration-action` [Blade
-sample](https://github.com/liferay/liferay-blade-samples/tree/master/gradle/apps/configuration-action)
+sample](https://github.com/liferay/liferay-blade-samples/tree/7.0/gradle/apps/configuration-action)
 and navigate to System Settings (*Control Panel* &rarr; *Configuration* &rarr;
 *System Settings*). In the Other category, click the *Message display
 configuration* entry.
@@ -472,7 +472,7 @@ the provider:
     scope. These settings are specified by an admin via the System Settings
     application or with an OSGi configuration file.
 
-Here are a couple real world examples from Liferay’s source code:
+Here are a couple real world examples from Liferay's source code:
 
     JournalGroupServiceConfiguration configuration =
         configurationProvider.getGroupConfiguration(

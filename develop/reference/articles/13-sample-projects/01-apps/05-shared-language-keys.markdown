@@ -29,13 +29,13 @@ sample's targeted demonstration.
 
 First, note the language keys provided by each module:
 
-`language-web`
-- `blade_language_web_LanguageWebPortlet.caption=Hello from BLADE Language Web!`
-- `blade_language_web_override_LanguageWebPortlet.caption=I have overridden the key from BLADE Language Module!`
+- `language-web`
+    - `blade_language_web_LanguageWebPortlet.caption=Hello from BLADE Language Web!`
+    - `blade_language_web_override_LanguageWebPortlet.caption=I have overridden the key from BLADE Language Module!`
 
-`language`
-- `blade_language_LanguageWebPortlet.caption=Hello from the BLADE Language Module!`
-- `blade_language_web_override_LanguageWebPortlet.caption=Hello from the BLADE Language Module but you won't see me!`
+- `language`
+    - `blade_language_LanguageWebPortlet.caption=Hello from the BLADE Language Module!`
+    - `blade_language_web_override_LanguageWebPortlet.caption=Hello from the BLADE Language Module but you won't see me!`
 
 When you place the sample BLADE Language Web portlet on a @product@ page, you're
 presented with three language keys.
@@ -98,6 +98,6 @@ tutorials.
 There are three different versions of this sample, each built with a different
 build tool:
 
-- [Gradle](https://github.com/liferay/liferay-blade-samples/tree/master/gradle/apps/shared-language-keys)
-- [Liferay Workspace](https://github.com/liferay/liferay-blade-samples/tree/master/liferay-workspace/apps/shared-language-keys)
-- [Maven](https://github.com/liferay/liferay-blade-samples/tree/master/maven/apps/shared-language-keys)
+- [Gradle](https://github.com/liferay/liferay-blade-samples/tree/7.0/gradle/apps/shared-language-keys)
+- [Liferay Workspace](https://github.com/liferay/liferay-blade-samples/tree/7.0/liferay-workspace/apps/shared-language-keys)
+- [Maven](https://github.com/liferay/liferay-blade-samples/tree/7.0/maven/apps/shared-language-keys)

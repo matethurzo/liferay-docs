@@ -152,7 +152,7 @@ The `GreedyPortlet` class is similar to `ReluctantPortlet`, except its
 
 The greedy policy option lets the component switch to using a higher ranked
 `SomeService` instance if one becomes active in the system. The section
-[*Deploying a module with a higher ranked service instance for binding to greedy references immediately*](#higher-ranked-service)
+[*Deploying a module with a higher ranked service instance for binding to greedy references immediately*](#deploying-a-module-with-a-higher-ranked-service-instance-for-binding-to-gre)
 demonstrates this portlet switching to a higher ranked service.
 
 It's time to see this module's portlets and service in action.
@@ -248,6 +248,6 @@ me!".
 There are three different versions of this sample, each built with a different
 build tool:
 
-- [Gradle](https://github.com/liferay/liferay-blade-samples/tree/master/gradle/apps/greedy-policy-option-portlet)
-- [Liferay Workspace](https://github.com/liferay/liferay-blade-samples/tree/master/liferay-workspace/apps/greedy-policy-option-portlet)
-- [Maven](https://github.com/liferay/liferay-blade-samples/tree/master/maven/apps/greedy-policy-option-portlet)
+- [Gradle](https://github.com/liferay/liferay-blade-samples/tree/7.0/gradle/apps/greedy-policy-option-portlet)
+- [Liferay Workspace](https://github.com/liferay/liferay-blade-samples/tree/7.0/liferay-workspace/apps/greedy-policy-option-portlet)
+- [Maven](https://github.com/liferay/liferay-blade-samples/tree/7.0/maven/apps/greedy-policy-option-portlet)

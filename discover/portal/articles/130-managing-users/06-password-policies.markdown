@@ -3,7 +3,7 @@
 Password policies can enhance the security of @product@. You can use the default
 policy that ships with Liferay (modified or as is), or you can create your own
 policies. Policies can be assigned to users or organizations, or can be set as
-the default password used throughout the @product@ instance. 
+the default policy used throughout the @product@ instance. 
 
 ## Adding and Configuring Password Policies [](id=adding-and-configuring-password-policies)
 
@@ -73,7 +73,7 @@ you can change the default password policy and configure it using Liferay's
 ## Default Policy Properties [](id=default-policy-properties)
 
 The Default Password Policy is set as the default and configured in Liferay's
-[portal.properties](https://docs.liferay.com/portal/7.0/propertiesdoc/portal.properties.html#Passwords)
+[portal.properties](@platform-ref@/7.0-latest/propertiesdoc/portal.properties.html#Passwords)
 file. If you want to make changes, including changing the default policy, add
 whichever properties and values you choose to modify in your
 `portal-ext.properties` file, as usual. Restart Liferay and your changes will
